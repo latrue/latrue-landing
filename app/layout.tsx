@@ -20,13 +20,19 @@ export default function RootLayout({
 }) {
   return (
     <html lang={'en'}>
-      <div className='font-Space tracking-wider'>
+      
+        
+        <body>
+        <div className='font-Space tracking-wider'>
         <Navbar/>
         <Hero/>
-        <body>{children}</body>
-        <About/>
+          {children}
+          <About/>
         <Footer/>
-      </div>
+        </div>
+          </body>
+        
+      
     </html>
   )
 }
