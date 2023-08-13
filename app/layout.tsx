@@ -19,6 +19,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
+    <html lang={'en'}>
       <div className='font-Space tracking-wider'>
         <Navbar/>
         <Hero/>
@@ -26,6 +27,8 @@ export default function RootLayout({
         <About/>
         <Footer/>
       </div>
-    
+
+    </html>
+      
   )
 }
